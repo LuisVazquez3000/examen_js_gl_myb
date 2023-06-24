@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<title>Movie-filter</title>
+</head>
+
+<body>
+	<div class="container mt-1">
+		<span>Elegir x ID</span>
+		<select id="selectInput" name="selectInput">
+			<option value="" selected>seleccione uno</option>
+			<option class="option" value="1">1</option>
+			<option class="option" value="2">2</option>
+			<option class="option" value="3">3</option>
+			<option class="option" value="4">4</option>
+			<option class="option" value="5">5</option>
+			<option class="option" value="6">6</option>
+			<option class="option" value="7">7</option>
+			<option class="option" value="8">8</option>
+			<option class="option" value="9">9</option>
+			<option class="option" value="10">10</option>
+		</select>
+
+		<div class="busqueda">
+			<div class="group-control">
+				<!-- <span>Ingrese su busqueda x pelicula</span>
+				<input type="text" id="searchInput"> -->
+				<div class="agrupar mt-2">
+					<span>Ingrese su busqueda x calificacion</span>
+					<input type="range" id="rangeInput" min="0" max="10">
+					<p>Value: <output id="value"></output></p>
+				</div>
+			</div>
+		</div>
+
+	<div class=" mt-1 px-md-3">
+		<div class="form-control-sm">
+			
+			<span>date from:</span>
+			<select name="searchDateFrom" id="searchDateFrom">
+				<option value="">Elije una opcion</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+			</select>
+			<span>date to:</span>
+			<select name="searchDateTo" id="searchDateTo">
+				<option value="">Elije una opcion</option>
+				<option value="2019">2019</option>
+				<option value="2020">2020</option>
+				<option value="2021">2021</option>
+				<option value="2022">2022</option>
+			</select>
+			<button id="btn-click" class="btn btn-info">Click</button>
+		</div>
+	</div>
+
+	<div class="containerCard" id="cardContainer"></div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+		</script>
+	<script src="./data.js"></script>
+	<!-- <script src="./movie-filter.js"></script> -->
+	<script src="./scripts/movies-filter.js"></script>
+</body>
+
+</html>
